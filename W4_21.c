@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int n,i,j,t;
+	scanf("%d",&n);
+	t=n-1;
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+		printf("%d",t);
+		}
+		t++;
+		printf("\n");
+	}
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n+1-i;j++)
+		{
+		printf("%d",t-1);
+		}
+		t--;
+		printf("\n");
+	}
+}
